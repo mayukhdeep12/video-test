@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #101010;
+}
+
+@layer utilities {
+	.flex__center {
+		@apply flex items-center justify-center;
+	}
+	.common__padding {
+		@apply sm:py-20 py-10 sm:px-10 px-5;
+	}
+	.link {
+		@apply flex items-center text-blue text-xl cursor-pointer hover:underline translate-y-20 opacity-0;
+	}
+	.section__heading {
+		@apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium translate-y-20 opacity-0;
+	}
+	.video__carousel__container {
+		@apply sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh];
+	}
+}
